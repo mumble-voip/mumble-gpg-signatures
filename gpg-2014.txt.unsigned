@@ -1,0 +1,74 @@
+Mumble GPG keys
+===============
+
+(Last-Updated: 2014-01-04)
+
+Mumble source tarballs (as well as some other products) are digitally signed via GPG.
+
+This document lists the GPG keys that were used to sign various Mumble releases and
+snapshots.
+
+ - mkrautz (GPG: 41BCDD10)
+
+All products built in 2014
+==========================
+
+Starting at the beginning of 2014, all of our build products
+(tarballs, zip files, MSI installers, DMG disk images) are GPG
+signed, and have a detached GPG signature to go along with them.
+Previously, only tarballs were signed.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+The signing is entirely automatic, and happens inside the Mumble
+build infrastructure.
+
+The products are signed with the following GPG key:
+http://mumble.info/gpg/mumble-auto-build-2014.asc
+
+Version 1.2.4
+=============
+
+Starting at version 1.2.4, Mumble source tarballs, as well as
+static Linux and OS X servers are signed with the following GPG key:
+
+Mumble Automatic Tarball Signer 2013 <tarball-signer-2013@mumbleapp.com>
+http://mumble.info/gpg/mumble-automatic-tarball-signer-2013.asc
+
+Version 1.2.3 and earlier
+=========================
+
+Before 1.2.4, the Mumble source tarballs were signed by Thorvald Natvig's personal GPG key:
+
+Thorvald Natvig <slicer@users.sourceforge.net>
+http://mumble.info/gpg/slicer.asc
+
+Snapshots
+=========
+
+Snapshots starting at 1.2.4-rc1-13-gc00b44e are signed with the following key:
+
+Mumble Automatic Tarball Signer 2013 <tarball-signer-2013@mumbleapp.com>
+http://mumble.info/gpg/mumble-automatic-tarball-signer-2013.asc
+
+All previous snapshots are signed with the following key:
+
+Thorvald Natvig <slicer@users.sourceforge.net>
+http://mumble.info/gpg/slicer.asc
+
+Git tags
+========
+
+All release tags in Git are GPG signed.
+
+Version 1.1.8 through 1.2.3 are signed by the following key:
+
+Thorvald Natvig <slicer@users.sourceforge.net>
+http://mumble.info/gpg/slicer.asc
+
+Version 1.2.4-rc1 and 1.2.4 are signed by the following key:
+
+Stefan Hacker <dd0t@users.sourceforge.net>
+http://mumble.info/gpg/dd0t.asc
+

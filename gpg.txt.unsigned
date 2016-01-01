@@ -1,0 +1,52 @@
+Mumble GPG keys
+===============
+
+(Last-Updated: 2015-01-02)
+
+Mumble source tarballs (as well as some other products) are digitally signed via GPG.
+
+This document lists the GPG keys that were used to sign various Mumble releases and
+snapshots.
+
+ - mkrautz (GPG: 41BCDD10)
+
+All products built in 2015
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images) are GPG signed, and have a detached GPG signature
+to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+The signing is entirely automatic, and happens inside the Mumble
+build infrastructure.
+
+The products are signed with the following GPG key:
+
+http://mumble.info/gpg/mumble-auto-build-2015.asc
+
+pub   4096R/751B4695 2015-01-01 [expires: 2016-01-01]
+      Key fingerprint = 710E 91FD F428 4F2E 69E0  DEBD D744 6C0F 751B 4695
+uid                  Mumble Automatic Build Infrastructure 2015 <mumble-auto-build-2015@mumble.info>
+
+All products built in 2014
+==========================
+
+All of the above is also true for products signed in 2014.
+
+However, the 2014 products are instead signed with the following GPG key:
+
+http://mumble.info/gpg/mumble-auto-build-2014.asc
+
+pub   4096R/5FEF3A9A 2014-01-04 [expired: 2015-01-01]
+      Key fingerprint = D32E 5D9E 01D2 FAF5 9D09  F62C ADD0 1104 5FEF 3A9A
+uid                  Mumble Automatic Build Infrastructure 2014 <mumble-auto-build-2014@mumbleapp.com>
+
+Earlier signing history
+=======================
+
+Please see
+http://mumble.info/gpg/gpg-2014.txt
+
