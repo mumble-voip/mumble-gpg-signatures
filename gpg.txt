@@ -4,7 +4,7 @@ Hash: SHA512
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2015-01-02)
+(Last-Updated: 2016-01-01)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
@@ -12,6 +12,38 @@ This document lists the GPG keys that were used to sign various Mumble releases 
 snapshots.
 
  - mkrautz (GPG: 41BCDD10)
+
+All products built in 2016
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images) are GPG signed, and have a detached GPG signature
+to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+For example, a released product called "product-1.0.tar.gz" would
+be available at
+
+    https://dl.mumble.info/product-1.0.tar.gz
+
+and its detached signature would be available at
+
+    https://dl.mumble.info/products-1.0.tar.gz.sig
+
+The signing of our build products is entirely automatic, and happens
+inside the Mumble build infrastructure.
+
+Our build products are signed with the following GPG key:
+
+pub   4096R/5A2BE0C1 2016-01-01 [expires: 2017-01-01]
+      Key fingerprint = 3BD0 ECA5 9253 19AF 89C2  5865 B585 609C 5A2B E0C1
+uid                  Mumble Automatic Build Infrastructure 2016 <mumble-auto-build-2016@mumble.info>
+
+The key is available as "mumble-auto-build-2016.asc" in this Git repository.
+(SHA256: 38c20a7efec7873963c4603e4475b2974c42064a4b8086db06760af8b1b23703)
 
 All products built in 2015
 ==========================
@@ -28,45 +60,31 @@ build infrastructure.
 
 The products are signed with the following GPG key:
 
-http://mumble.info/gpg/mumble-auto-build-2015.asc
-
 pub   4096R/751B4695 2015-01-01 [expires: 2016-01-01]
       Key fingerprint = 710E 91FD F428 4F2E 69E0  DEBD D744 6C0F 751B 4695
 uid                  Mumble Automatic Build Infrastructure 2015 <mumble-auto-build-2015@mumble.info>
 
-All products built in 2014
-==========================
-
-All of the above is also true for products signed in 2014.
-
-However, the 2014 products are instead signed with the following GPG key:
-
-http://mumble.info/gpg/mumble-auto-build-2014.asc
-
-pub   4096R/5FEF3A9A 2014-01-04 [expired: 2015-01-01]
-      Key fingerprint = D32E 5D9E 01D2 FAF5 9D09  F62C ADD0 1104 5FEF 3A9A
-uid                  Mumble Automatic Build Infrastructure 2014 <mumble-auto-build-2014@mumbleapp.com>
+The key is available as "mumble-auto-build-2015.asc" in this Git repository.
+(SHA256: b89ef0507d0f7f911469b420a3c71350eb84fb688b3aa55c1b62139f7b7f0a87)
 
 Earlier signing history
 =======================
 
-Please see
-http://mumble.info/gpg/gpg-2014.txt
-
+Please see the 'gpg-2014.txt' file in this repository.
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQIcBAEBCgAGBQJUpqPbAAoJEIxe9eJBvN0QwcMP/jeDiNrb8Qv23CEyIgdoA6MG
-DZuVZaqgc6dkPe//wTr0KUsiTShS/R6TkEDjt8zMre2X67yIyXV2F7gayhrrslmY
-e7KBMboxjcKG120e7iGZ/4atQxaU2uOawpOfbAqK1vBGG46ZzrQIc1eLcwcFxOmp
-3c348JwNIiJ+fymDteQ17G+ZKNY3oQABqCGayA8Dj1zxzd7DrCPlf2sCKXpnBNEn
-aKzNl3RL7HbMYupKj/bpAd+DbYYu8dj+S9kVgQDNbAv0o84637wrdWbqnCWPEJyn
-tlilE/2VVp7PJ3V6i7qnlOrsMBl1UrJMBhpYzz6DSouuelWZ0Cf6ASVyJ5b4zVSi
-7KCdPD2Ylp+I4FRvATG6S8gGRuuWovI4yF+4EjPwAuco+UKTlpZVi1WQ02ttJP4D
-Cc4NsnJZc3ZQ2G7UU9Ta4pQDYcaLk5Ny4sWlHj+9DowVPLJBX67waQAR3TF7mW4v
-NaqqkMdQx+PTlSSHPcg/Evo2J/Z9ed0DradUvLPmnC20D8Wp9jKHxEDBJqckt5iR
-AMoh1mRKxDcw+4dlHVy6M6YKAue9NMu/Wfvpe9o59kN9M9EELTe6FC93DIdjZPpx
-VGHslNi5bTU+g3xYM1g6DN6ZrC2yZDHpAjqkmbXSWzIMCA8Jp23S4csPqkYZ6V4c
-IOJwmAoYJXY4h3jRESpt
-=qnCo
+iQIcBAEBCgAGBQJWho0UAAoJEIxe9eJBvN0Q1GwP/RPW8gTUWr5RKXhw5/6ZgcrV
+aHk7PtXkeGukxyXwLBfTZWU2FQXKHM0A/DMg/ZzCtKXZadYCx+aDVWW3SUKv7ahu
+RBYGx1KxGD9zbnfVp8rMHU8dedLSn9cRe2GvU6zp5Z4vVEWyxsOeltlLE/XkEpKd
+1Sl2UU7+JE0CpVexEzByy9knBPRiCLp6JHg6P1Y8dug+at/IzJ40ZDERfr/C4OV2
+kAU/VBOBa1zZVjPo1o/zBH2e9yV0EsdFdQ1zOqUkeIM7yfHwYoX934d7WyVl1Ogd
+cM1jICTmALhQGgrtmFxZIPTk7cR9DmEYjrA9/v5rHWK16ADtNsL/tRbtdwD63F6d
+J3JmxyD5P6koE94QxDQG8ogVQMNSHNRNlOddXoB56loDnRmQkFmuSr8CPM5EUzEY
+i5yEZX3e0IZCz6jheq9hlqrgFXgOFsw4M7/44bj5xxNqmBWY1Qj4EjTkZ+/7QEg7
+jzEI7KSZrLJdWlZlOMyw9jUJc6Chk4akjcd/dLXA97SJrVr6H/0JIfvoAL31c3Wz
+z9cmaThbz/TSrtZBhyYQKAxnNf8CqWP+LuRd37tNiBOxUDoO49m44rpjx/cNLNa5
+FRseGOdN+MXsMOCyKxbGOxoLiWhG5MQ8W/U6Whk563AnFb/52yngSKea52i1tIIa
+mYvVO4JvxPNuFE8yHCnj
+=LdKp
 -----END PGP SIGNATURE-----

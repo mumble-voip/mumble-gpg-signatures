@@ -1,7 +1,7 @@
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2015-01-02)
+(Last-Updated: 2016-01-01)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
@@ -9,6 +9,38 @@ This document lists the GPG keys that were used to sign various Mumble releases 
 snapshots.
 
  - mkrautz (GPG: 41BCDD10)
+
+All products built in 2016
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images) are GPG signed, and have a detached GPG signature
+to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+For example, a released product called "product-1.0.tar.gz" would
+be available at
+
+    https://dl.mumble.info/product-1.0.tar.gz
+
+and its detached signature would be available at
+
+    https://dl.mumble.info/products-1.0.tar.gz.sig
+
+The signing of our build products is entirely automatic, and happens
+inside the Mumble build infrastructure.
+
+Our build products are signed with the following GPG key:
+
+pub   4096R/5A2BE0C1 2016-01-01 [expires: 2017-01-01]
+      Key fingerprint = 3BD0 ECA5 9253 19AF 89C2  5865 B585 609C 5A2B E0C1
+uid                  Mumble Automatic Build Infrastructure 2016 <mumble-auto-build-2016@mumble.info>
+
+The key is available as "mumble-auto-build-2016.asc" in this Git repository.
+(SHA256: 38c20a7efec7873963c4603e4475b2974c42064a4b8086db06760af8b1b23703)
 
 All products built in 2015
 ==========================
@@ -25,28 +57,14 @@ build infrastructure.
 
 The products are signed with the following GPG key:
 
-http://mumble.info/gpg/mumble-auto-build-2015.asc
-
 pub   4096R/751B4695 2015-01-01 [expires: 2016-01-01]
       Key fingerprint = 710E 91FD F428 4F2E 69E0  DEBD D744 6C0F 751B 4695
 uid                  Mumble Automatic Build Infrastructure 2015 <mumble-auto-build-2015@mumble.info>
 
-All products built in 2014
-==========================
-
-All of the above is also true for products signed in 2014.
-
-However, the 2014 products are instead signed with the following GPG key:
-
-http://mumble.info/gpg/mumble-auto-build-2014.asc
-
-pub   4096R/5FEF3A9A 2014-01-04 [expired: 2015-01-01]
-      Key fingerprint = D32E 5D9E 01D2 FAF5 9D09  F62C ADD0 1104 5FEF 3A9A
-uid                  Mumble Automatic Build Infrastructure 2014 <mumble-auto-build-2014@mumbleapp.com>
+The key is available as "mumble-auto-build-2015.asc" in this Git repository.
+(SHA256: b89ef0507d0f7f911469b420a3c71350eb84fb688b3aa55c1b62139f7b7f0a87)
 
 Earlier signing history
 =======================
 
-Please see
-http://mumble.info/gpg/gpg-2014.txt
-
+Please see the 'gpg-2014.txt' file in this repository.
