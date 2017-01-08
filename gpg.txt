@@ -4,7 +4,7 @@ Hash: SHA512
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2016-01-01)
+(Last-Updated: 2017-01-08)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
@@ -12,6 +12,38 @@ This document lists the GPG keys that were used to sign various Mumble releases 
 snapshots.
 
  - mkrautz (GPG: 41BCDD10)
+
+All products built in 2017
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images and stand-alone binaries) are GPG signed, and have
+a detached GPG signature to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+For example, a released product called "product-1.0.tar.gz" would
+be available at
+
+    https://dl.mumble.info/product-1.0.tar.gz
+
+and its detached signature would be available at
+
+    https://dl.mumble.info/products-1.0.tar.gz.sig
+
+The signing of our build products is entirely automatic, and happens
+inside the Mumble build infrastructure.
+
+Our build products are signed with the following GPG key:
+
+pub   4096R/625297A0 2017-01-08 [expires: 2017-12-31]
+      Key fingerprint = C466 6C67 67A2 6017 CE68  4069 8804 8D0D 6252 97A0
+uid                  Mumble Automatic Build Infrastructure 2017 <mumble-auto-build-2017@mumble.info>
+
+The key is available as "mumble-auto-build-2017.asc" in this Git repository.
+(SHA256: 7dbd714b3e04ae939ab0684aec30d4ff65d696d86b2ed9031021eea551f8810b)
 
 All products built in 2016
 ==========================
@@ -74,17 +106,17 @@ Please see the 'gpg-2014.txt' file in this repository.
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQIcBAEBCgAGBQJWho0UAAoJEIxe9eJBvN0Q1GwP/RPW8gTUWr5RKXhw5/6ZgcrV
-aHk7PtXkeGukxyXwLBfTZWU2FQXKHM0A/DMg/ZzCtKXZadYCx+aDVWW3SUKv7ahu
-RBYGx1KxGD9zbnfVp8rMHU8dedLSn9cRe2GvU6zp5Z4vVEWyxsOeltlLE/XkEpKd
-1Sl2UU7+JE0CpVexEzByy9knBPRiCLp6JHg6P1Y8dug+at/IzJ40ZDERfr/C4OV2
-kAU/VBOBa1zZVjPo1o/zBH2e9yV0EsdFdQ1zOqUkeIM7yfHwYoX934d7WyVl1Ogd
-cM1jICTmALhQGgrtmFxZIPTk7cR9DmEYjrA9/v5rHWK16ADtNsL/tRbtdwD63F6d
-J3JmxyD5P6koE94QxDQG8ogVQMNSHNRNlOddXoB56loDnRmQkFmuSr8CPM5EUzEY
-i5yEZX3e0IZCz6jheq9hlqrgFXgOFsw4M7/44bj5xxNqmBWY1Qj4EjTkZ+/7QEg7
-jzEI7KSZrLJdWlZlOMyw9jUJc6Chk4akjcd/dLXA97SJrVr6H/0JIfvoAL31c3Wz
-z9cmaThbz/TSrtZBhyYQKAxnNf8CqWP+LuRd37tNiBOxUDoO49m44rpjx/cNLNa5
-FRseGOdN+MXsMOCyKxbGOxoLiWhG5MQ8W/U6Whk563AnFb/52yngSKea52i1tIIa
-mYvVO4JvxPNuFE8yHCnj
-=LdKp
+iQIcBAEBCgAGBQJYcrt4AAoJEIxe9eJBvN0QOPYP/j6SLu1ZSMLRVloe7e+87JpC
+lCOBH7emzzBroDNqEO98HXcqHjbsXF8KfHlDH4HFvgya0pmsZGsB7ULStUwYScCs
+ubg4oFE/k0CGTQF7eR+nJh8pYDQAfm4OA1xVxWqVVA/OIo51TB5NFCgjdNP0sc13
+qId2dR+7xiG2Hz6dai8WFDiWCT1jRegESGs5llDf9KuyyeteDeew+FFr5bNxYDlX
+ZdR2sSbQs6xDOcZ7VJEjXfdvUzzeoKQMGZbtHLifNV2oHHEgRHd3kaRC5unbb3a6
+W4WGd+33ODY+358cPxD/phmEnPps7eOlVFMpuiPquOCQDcSAYw2DjiWW6Okk8odS
+9csAq2Uj9VbinChByJq/fFoslGkVutwc3qdyObfp117IP4TL+Fh0YS9QoJJ9tlS2
+Wm3sDAQwiUuCWo9ab5yJRul6P5eq0Wxe7yEClK9tkromLjcQImiMCOAxfxKHxQ6i
+NyudWl6YNYpYzuXeaqki5rpz0fAS4kW9rqbmyaXJRlNXXVc9hWRdb1WJ08UhnPX5
+Dm3ykPdzcChoXGt8yQXsNL+yuz2hmpQZArzZkFXGDH1jxoXABImlpYdiDVZJriqS
+byPxUKd/snun84o5iL2eWFqy9H+H5hNpPFp+wmzS7n8auv9av9rM9DlHLkofg10w
+9K8MqUuGcvZzQ9EU+d5m
+=LcFW
 -----END PGP SIGNATURE-----
