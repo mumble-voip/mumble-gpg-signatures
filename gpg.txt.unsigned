@@ -10,6 +10,38 @@ snapshots.
 
  - mkrautz (GPG: 41BCDD10)
 
+All products built in 2019
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images and stand-alone binaries) are GPG signed, and have
+a detached GPG signature to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+For example, a released product called "product-1.0.tar.gz" would
+be available at
+
+    https://dl.mumble.info/product-1.0.tar.gz
+
+and its detached signature would be available at
+
+    https://dl.mumble.info/products-1.0.tar.gz.sig
+
+The signing of our build products is entirely automatic, and happens
+inside the Mumble build infrastructure.
+
+Our build products are signed with the following GPG key:
+
+pub   4096R/B893449B 2019-01-04 [expires: 2020-01-01]
+      Key fingerprint = 56D0 B23A E00B 1EE9 A8BA  AC0F 5B8C F87B B893 449B
+uid                  Mumble Automatic Build Infrastructure 2019 <mumble-auto-build-2019@mumble.info>
+
+The key is available as "mumble-auto-build-2019.asc" in this Git repository.
+(SHA256: be089016b010f2f6c3478ed7a3248bb4ceaa58996ae18666b7dab1b0edd04d48)
+
 All products built in 2018
 ==========================
 
