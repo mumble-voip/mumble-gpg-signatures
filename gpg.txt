@@ -1,10 +1,10 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA1
 
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2018-03-04)
+(Last-Updated: 2020-04-11)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
@@ -12,6 +12,38 @@ This document lists the GPG keys that were used to sign various Mumble releases 
 snapshots.
 
  - mkrautz (GPG: 41BCDD10)
+
+All products built in 2020
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images and stand-alone binaries) are GPG signed, and have
+a detached GPG signature to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+For example, a released product called "product-1.0.tar.gz" would
+be available at
+
+    https://dl.mumble.info/product-1.0.tar.gz
+
+and its detached signature would be available at
+
+    https://dl.mumble.info/products-1.0.tar.gz.sig
+
+The signing of our build products is entirely automatic, and happens
+inside the Mumble build infrastructure.
+
+Our build products are signed with the following GPG key:
+
+pub   4096R/15175AE3 2020-04-11 [expires: 2021-01-01]
+      Key fingerprint = 76B5 0270 322F 0E3D 78DC  E829 8AA3 28A3 1517 5AE3
+uid                  Mumble Automatic Build Infrastructure 2020 <mumble-auto-build-2020@mumble.info>
+
+The key is available as "mumble-auto-build-2020.asc" in this Git repository.
+(SHA256: d85af016ae2685e3d8ad266e953011d3fdc744602bc14909828a2fe7f69523e6)
 
 All products built in 2019
 ==========================
@@ -168,18 +200,19 @@ Earlier signing history
 
 Please see the 'gpg-2014.txt' file in this repository.
 -----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
 
-iQIzBAEBCgAdFiEEqEQQWXb4MwHwa2rtjF714kG83RAFAlwv28AACgkQjF714kG8
-3RAkoRAAori6/5Vyr4aCX10miBSy9Z1hGYXBuh0P2mU4kcMViQXs5ZUOyi0Hgvtn
-G3aIMju403FP1dbY5WeUKdxY/iPzXxJcD0yJkEecxBAYpLSuXLEt6K3yz4BqONCK
-LXlmcnTJs7HEF+8yn9nhrNy4nh68aUvLxtWa5m5p2+ZSKk3mw97FGQMn7wShI7+n
-j65ERqorrivoN5NSXCkQ2rQntFKi49yuMxf/DHxRLkzKIDFl5mu7oHGc7cCwqrs+
-Q/zho+k4TOhx2ZCNTGgLeooHLP9B92ATxUtpOdi3A/QdgxaAJee/UqM9UEeqmPfn
-hJspP2MnHU0L9ft6e7UshqJjhYGU3SrZg9qqtGeQDHFe2zcHtxWYVt36x5MZfLVB
-CPGT49N4RwVicKoSG66CdYhbVyVTnYQQiAH9YmCXBKOHxZU9G7bnRA7gNB0734Ne
-9awlJagD1zPRPJ4VthPzGvaD+dZSLwJE7fGWRfsNzsQvNsK6Oed6pOitg+T8jl6z
-69AIIYQhudAjnwZXNv+HCfgB0WoEztbwlLYgNTk9axT5XEY6QDSseyFhEfPKaRnz
-xBvTOAwQlBTdloNlstkYtG1t0nopwiDg/7X6yF2b7EyNwCgbwbYxJHqGHm7S6dwy
-iRW9wNO/cu0VeQGI0HHKA2msrUoTTgkQ7cohULJZP+5lu3uFnDY=
-=7ley
+iQIcBAEBAgAGBQJekZFzAAoJEIqjKKMVF1rj3zcP/04vO/MW/qepBdXlyUWb5Qz9
+lETfGxXmxqvHYQEbx3zD5J8kHySrDM3P1PXJiNx2UZrrwCEl4B2SfYafwc4I2BVq
+Ewu2oNGkKJzlN2H1FpzQ7g37QYFh3ekIq08VgLi3wnKIXa9slo7O/sZILF/MyQcq
+KP1ROvM4jIFJ9f9VMdCZenjXNdPWUlBAGTB7M1V2nkyBgykBQ82a7oXpMesXamsb
+74Jrq/H+fIbcj6sTXzYRIErUq4w4y8HHVWynkas4VSG0UBFxDZUI/jb3nhdlEP+P
+W5dswfhNUgEiGwLDRJpTISXmaCRzxvgj01CEsAZR+QAUlf9bOlVVFJgJSFhw8gLM
+ws1Jd2n4IZrbxJGzpB3+zNNQEWFQmG/9KiHr2Canada/1Wj9zG8PFKtuDawxdiwE
+tyGXI8rbJplWQDm0b5tknU2xb0WMXv+hhB3ZuL/f7xERnU8StGNBcg+KmvLpvwMq
+z5OKrjBQid3Sie+b+ldZWqTCFsS1w26B2Gic80e+/rqvd80u2xDWuqZrUjuqcSSu
+Inc2g9WQV081Dg9uCFrK4xG8QQkeVZGkJNVVVFyu2miucAo/M+i3knBRAJ1nejFi
+AGmjKQPvB3DPb2nuCfC7HXOeuGrBqD7ONH2gAXk45TiRvmHQSUxio35gNYHEKBhJ
+/6EyOa8Yvk/AUKlIuYgu
+=R2pF
 -----END PGP SIGNATURE-----
