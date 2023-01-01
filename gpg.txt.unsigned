@@ -1,16 +1,37 @@
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2022-01-01)
+(Last-Updated: 2023-01-01)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
 This document lists the GPG keys that were used to sign various Mumble releases and
 snapshots.
 
- - davidebeatrici (GPG: A280DBCC)
+ - davidebeatrici (GPG: 7FDCC3BC)
 
- All products built in 2022
+All products built in 2023
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images and stand-alone binaries) are GPG signed, and have
+a detached GPG signature to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+Our build products are signed with the following GPG key:
+
+pub   ed25519 2023-01-01 [SC] [expires: 2024-01-02]
+      DA223B9603A9C7DD4691143E69F82AFF148DC0FF
+uid           [ultimate] Mumble Automatic Build Infrastructure 2023 <mumble-auto-build-2023@mumble.info>
+sub   cv25519 2023-01-01 [E] [expires: 2024-01-02]
+
+The key is available as "mumble-auto-build-2023.asc" in this Git repository.
+(SHA256: 36fe617d2c4c59d714771aefdc923dd480cc11a70ceee32146ecd19a9e801bfa)
+
+All products built in 2022
 ==========================
 
 All of our build products (tarballs, zip files, MSI installers,
