@@ -4,14 +4,35 @@ Hash: SHA512
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2023-01-01)
+(Last-Updated: 2024-01-01)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
 This document lists the GPG keys that were used to sign various Mumble releases and
 snapshots.
 
- - davidebeatrici (GPG: 7FDCC3BC)
+ - davidebeatrici (GPG: 418B0393)
+
+All products built in 2024
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images and stand-alone binaries) are GPG signed, and have
+a detached GPG signature to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+Our build products are signed with the following GPG key:
+
+pub   ed25519 2024-01-01 [SC] [expires: 2025-01-02]
+      9B9ADC09AD09F76B10F87CBFCDB285AE2332CF8D
+uid           [ultimate] Mumble Automatic Build Infrastructure 2024 <mumble-auto-build-2024@mumble.info>
+sub   cv25519 2024-01-01 [E] [expires: 2025-01-02]
+
+The key is available as "mumble-auto-build-2024.asc" in this Git repository.
+(SHA256: 21908896d72690043aab8a0992045796401067e4ed5102581f8d54d6874ba8f0)
 
 All products built in 2023
 ==========================
@@ -276,12 +297,8 @@ Earlier signing history
 Please see the 'gpg-2014.txt' file in this repository.
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEE4rD4ohhT/IFg4fi45IOl9O8zh/4FAmOw2U0ACgkQ5IOl9O8z
-h/4OjQgAlT5VHJf8qbJmj7t0Si6nyWVuOmo3lSDPhSqnCBlYxq51dk1JiYNbSiKy
-P6q8WAgb5ozW8U+YPxx02idS1vt3usW22gzaMEJQd2sQimNouCnYeWlxCbMLka8k
-Klv5SR7ZmFDIkNIJGyWG4usUPyO13IIxXaTmdn37492i8VldG0xl5kxSfKQIX0zR
-ZRW7Jo6pEB+ZDQPaTLHCw/pY/CjcZi+Lj7yMPrDZ7c46Fb7F9NBHZQZjMbu+HUGI
-4xXDgaLGAX2ukiY2wzN3XUX4DV+Cnj8qQXDCNusX508wLfO2CP1p3HGgk/18elrB
-KrXoI/XrSrbyXqkItuDmcRG/muHI3w==
-=ck6v
+iHUEARYKAB0WIQQ94Vf62YQtcwSknCvkYFYwQYsDkwUCZZIKIwAKCRDkYFYwQYsD
+kyfSAP0R6mpkFW1lnIaFOIGZLMBqBgYnEvcJB7fEtgaIfVYjrgD/bkbmT2dL82ca
+GsMkeWQDjU8zw6M2HGUdfsF5eY3RiwY=
+=pCX1
 -----END PGP SIGNATURE-----
