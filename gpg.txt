@@ -4,14 +4,36 @@ Hash: SHA512
 Mumble GPG keys
 ===============
 
-(Last-Updated: 2025-01-01)
+(Last-Updated: 2026-01-01)
 
 Mumble source tarballs (as well as some other products) are digitally signed via GPG.
 
 This document lists the GPG keys that were used to sign various Mumble releases and
 snapshots.
 
- - davidebeatrici (GPG: 1BBC3A03)
+ - davidebeatrici (GPG: D94D4218)
+
+All products built in 2026
+==========================
+
+All of our build products (tarballs, zip files, MSI installers,
+DMG disk images and stand-alone binaries) are GPG signed, and have
+a detached GPG signature to go along with them.
+
+The detached signatures are named <original-file-name>.sig, and
+are ASCII-armoured.
+
+Our downloads are available at the address https://dl.mumble.info.
+Our build products are signed with the following GPG key:
+
+pub   ed25519 2026-01-01 [SC] [expires: 2027-01-02]
+      F62408DEFB8603FBF45B02244FDC47DD5D6A6D14
+uid           [ultimate] Mumble Automatic Build Infrastructure 2026 <mumble-auto-build-2026@mumble.info>
+sub   cv25519 2026-01-01 [E] [expires: 2027-01-02]
+      D9284BA33BB1F26DBB99E6EBC0C0470D797E599E
+
+The key is available as "mumble-auto-build-2026.asc" in this Git repository.
+(SHA256: 08d1e95e29b18836ee9fc744f424258181eb853b0feecf8eab58eff8574df31b)
 
 All products built in 2025
 ==========================
@@ -319,8 +341,9 @@ Earlier signing history
 Please see the 'gpg-2014.txt' file in this repository.
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRYUMfvZ6bcA64Szefiph3KG7w6AwUCZ3TC2QAKCRDiph3KG7w6
-A9PwAQD74U/OHH1F+9auIdtGHJ36eqfI6r3otm5hukzh2U3/CgD/QOx8lJAFcbLm
-d07tWfAyTh2y9l5D7wxUEjt92wtefwQ=
-=mNlj
+iJEEARYKADkWIQQ+rkUSq9GNjuUNlP3rmUTR2U1CGAUCaVXd1RsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMSwyLDIACgkQ65lE0dlNQhjS8wD+NMULUmUXL62q/RDxqnpo
+NhuIO+Tj0AwFI8hegOoCaxcBAPSUgBjU7tlCyAbHvbSOun650dA1UKnLBaSRoBrC
+jocG
+=ERIb
 -----END PGP SIGNATURE-----
